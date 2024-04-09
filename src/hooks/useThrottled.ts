@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
-const DEFAULT_THROTTLE_DELAY = 1000;
+import { DEFAULT_THROTTLE_DELAY } from "../constants";
 
 export const useThrottled = <T>(value: T, delay = DEFAULT_THROTTLE_DELAY) => {
   const [throttledValue, setThrottledValue] = useState<T>(value);
